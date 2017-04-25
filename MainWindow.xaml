@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CryptoAES.MainWindow"
+        Title="MainWindow" Height="278.947" Width="467.105">
+	<Grid>
+		<Label Content="Encriptador AES 128" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+		<Label Content="Llave de Hexadecimal (32 chars)" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,0.263" Height="27"/>
+		<TextBox Name="TextboxLlave"  HorizontalAlignment="Left" Height="27" Margin="214,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" MaxLength="32" />
+		<Label Content="Nombre del archivo" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Height="27" Width="199"/>
+		<TextBox Name="TextboxNombreArchivo"  HorizontalAlignment="Left" Height="27" Margin="214,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" />
+		<Label Content="Texto a Encriptar" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Height="27" Width="199"/>
+		<TextBox Name="TextboxTextoEncriptar" HorizontalAlignment="Left" Height="109" Margin="214,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" MaxLength="100"/>
+		<Button Name="BotonEncriptar" Content="Encriptar" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="180" Click="BotonEncriptar_Click" />
+		<Button Name="BotonDesencriptar" Content="Desencriptar" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Width="180" Click="BotonDesencriptar_Click"/>
+
+	</Grid>
+</Window>
